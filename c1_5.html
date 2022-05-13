@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" value="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Short explanation</p>
+    <form id="survey-form">
+      <fieldset>
+        <field><label id="name-label" for="name">*Enter your name: </label><input id="name" type="text" placeholder="Joe Smith" name="name" required></field>
+        <field><label id="email-label" for="email">*Enter your email: </label> <input id="email" type="email" placeholder="joe@example.com" name="email" required></field>
+        <field id="gender">Select your gender: 
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="m">Male</option>
+            <option value="f">Female</option>
+            <option value="o">Other</option>
+          </select>
+        </field>
+      </fieldset>
+      <fieldset>
+        <field><label id="number-label" for="number">Enter a number: <input id="number" placeholder="10" min="0" max="10" type="number" name="number"></field>
+      </fieldset>
+      <fieldset>
+        <p>When do you wake up?</p>
+        <field><input type="radio" name="wakeup-time" value="morning" checked> I wake up in the morning</field>
+        <field><input type="radio" name="wakeup-time" value="evening"> I wake up in the evening</field>
+      </fieldset>
+      <fieldset>
+        <p>What is the ideal schedule for you?</p>
+        <field><input type="checkbox" name="schedule" value="schedule-mondays"> Mondays</field>
+        <field><input type="checkbox" name="schedule" value="schedule-tuesdays"> Tuesdays</field>
+        <field><input type="checkbox" name="schedule" value="schedule-wednesdays"> Wednesdays</field>
+        <field><input type="checkbox" name="schedule" value="schedule-thursdays"> Thursdays</field>
+        <field><input type="checkbox" name="schedule" value="schedule-fridays"> Fridays</field>
+      </fieldset>
+      <fieldset>
+        <field>Any comments? <textarea></textarea></field>
+      </fieldset>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
